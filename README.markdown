@@ -2,13 +2,14 @@ RubyGems Automatic Etags Invoker
 ================================
 
 This gem is based on [tpope's](https://github.com/tpope)
-[ctags](https://github.com/tpope/gem-ctags) but for Emacs compliant
+ [ctags](https://github.com/tpope/gem-ctags) but for Emacs compliant
 'TAGS'.
 
 Nary a day of Ruby development goes by where I don't run `gem open`.
-And when I do, I want tags.  As good as I've gotten at `ctags -eR .`,
+And when I do, I want tags.  As good as I've gotten at `ctags -R .`,
 I've grown weary of it.  So I wrote a RubyGems plugin to automatically
-invoke Ctags every time a Gem is installed.
+invoke Ctags every time a Gem is installed. (tpope's reasoning behind
+gem-ctags)
 
 Installation
 ------------
@@ -16,7 +17,7 @@ Installation
     gem install gem-etags
 
 Now all that's left to do is install [Exuberant
-Ctags][http://ctags.sourceforge.net/] and make sure it comes first in
+Ctags](http://ctags.sourceforge.net/) and make sure it comes first in
 `$PATH`
 
 If you're using RVM, I recommend extending your global gemset:
